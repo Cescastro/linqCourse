@@ -1,0 +1,15 @@
+C:\Users\ccastro\source\repos\linqCourse\bin\Debug\net6.0\linqCourse.exe
+C:\Users\ccastro\source\repos\linqCourse\bin\Debug\net6.0\linqCourse.deps.json
+C:\Users\ccastro\source\repos\linqCourse\bin\Debug\net6.0\linqCourse.runtimeconfig.json
+C:\Users\ccastro\source\repos\linqCourse\bin\Debug\net6.0\linqCourse.dll
+C:\Users\ccastro\source\repos\linqCourse\bin\Debug\net6.0\linqCourse.pdb
+C:\Users\ccastro\source\repos\linqCourse\obj\Debug\net6.0\linqCourse.csproj.AssemblyReference.cache
+C:\Users\ccastro\source\repos\linqCourse\obj\Debug\net6.0\linqCourse.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ccastro\source\repos\linqCourse\obj\Debug\net6.0\linqCourse.AssemblyInfoInputs.cache
+C:\Users\ccastro\source\repos\linqCourse\obj\Debug\net6.0\linqCourse.AssemblyInfo.cs
+C:\Users\ccastro\source\repos\linqCourse\obj\Debug\net6.0\linqCourse.csproj.CoreCompileInputs.cache
+C:\Users\ccastro\source\repos\linqCourse\obj\Debug\net6.0\linqCourse.dll
+C:\Users\ccastro\source\repos\linqCourse\obj\Debug\net6.0\refint\linqCourse.dll
+C:\Users\ccastro\source\repos\linqCourse\obj\Debug\net6.0\linqCourse.pdb
+C:\Users\ccastro\source\repos\linqCourse\obj\Debug\net6.0\linqCourse.genruntimeconfig.cache
+C:\Users\ccastro\source\repos\linqCourse\obj\Debug\net6.0\ref\linqCourse.dll
