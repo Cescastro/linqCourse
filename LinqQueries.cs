@@ -98,4 +98,47 @@ public class LinqQueries
         return librosCollection           
             .Count(p=> p.PageCount >= 200 && p.PageCount <= 500);
     }
+
+    public DateTime FechaDePublicacionMenos()
+    {
+        return librosCollection.Min(p=> p.PublishedDate);
+    }
+
+    public int MayorCantidadDePaginas()
+    {
+        return librosCollection.Max(p=> p.PageCount);
+    }
+
+    public double PromedioCaracteresTitulo()
+    {
+       return librosCollection.Average(p => p.Title.Length); 
+    }
+
+    public IEnumerable<IGrouping<int,Book>> LibrosDespuesDel2000AgrupadosPorAnno()
+    {
+        return librosCollection.Where(p=> p.PublishedDate.Year >= 2000)
+            .GroupBy(p=> p.PublishedDate.Year);
+    }
+
+    public IEnumerable<IGrouping<string,Book>> LibrosDespuesDel2000AgrupadosPorCategoria()
+    {
+        return librosCollection.Where(p=> p.PublishedDate.Year >= 2000)
+            .OrderBy(q=>q.PublishedDate)
+            .GroupBy(p=> p.Categories[0]);
+    }
+
+    public ILookup<char,Book> DiccionarioDeLibrosPorLetra()
+    {
+        return librosCollection.ToLookup(p => p.Title[0], p=> p);
+    }
+
+    public IEnumerable<Book> LibrosDespues200ConMasDe500Paginas()
+    {
+        var librosDespues2005 = librosCollection.Where(p=>p.PublishedDate.Year > 2005);
+        var libroMasDe500Pagns = librosCollection.Where(p=> p.PageCount > 500);
+
+        return librosDespues2005.Join(libroMasDe500Pagns, p=> p.Title, q=> q.Title, (p,x)=> p);
+    }
+
+
 }
